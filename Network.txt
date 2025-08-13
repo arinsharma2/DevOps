@@ -1,0 +1,65 @@
+        Medium
+      /    |    \
+   hub	switch	router
+
+Language - 
+	protocols:-	TCP -> Transmision Control Protocol
+	           	UDP -> User Datagram Protocol
+ INTERNET PROTOCOL
+	IP
+	/\
+    IPV4  IPV6
+     |     |
+  4 byte  128 bit
+= 32 bit  0-16 no (hexadecimal)
+
+minimum - maximum
+0.0.0.0 - 255.255.255
+
+check IP Address -> ifconfig (command) or ip a
+{eg; wlp2s0: intel 192.168.43.29}
+
+				IP
+ 				/\
+      		      Private IP  Public IP
+			(local)	   (all over world its unique)
+range-
+10.0.0.0    -> 10.255.255.255     	 rest all are public IP.
+172.16.0.0  -> 172.31.255.255
+192.168.0.0 -> 192.168.255.255
+
+bc -> basic calculator
+2^32 (type)
+4294967296
+
+subnet or netmask -> if router is installed then give a subnet value to it.
+
+IP Address classes-
+Class A 255.0.0.0     192.0.0.0
+Class B 255.255.0.0   192.168.0.0
+Class C 255.255.255.0 192.168.0.0
+Class D  
+Class E
+
+IP + Port -> Socket
+65586 2 byte - 2^16 = 2^8 2^8
+
+http
+https
+telnet
+ssh
+scp
+tcp
+nfs
+
+command -> cat /etc/sevices
+
+	 key 
+	 /\
+symmetric   asymmetric
+    |           /\
+ same key    
+
+sudo passwd ubuntu -> a command to change password of ubuntu.
+
+ssh-keygen -> command to create key

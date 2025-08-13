@@ -1,0 +1,30 @@
+									DOCKER
+
+docker images -> to show images
+docker version
+docker pull 
+docker ps
+docker ps -a
+docker run -d -it --name
+docker rm -f
+docker rmi
+docker exec
+docker attach
+docker commit
+docker cp
+docker stop
+docker start
+docker build -t <img_name> . (start- Dockerfile) -f filename
+docker tag
+
+								DOCKER NETWORKING
+
+docker inspect <container_name> 
+
+								DOCKER COMPOSE
+
+		YAML - Yet Another Markup Language  				version : "3.3"
+ image :									services :
+ name  : "xyz"									network :
+		JSON								volume :
+ image{name = xyz}

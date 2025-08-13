@@ -1,0 +1,23 @@
+    1  sudo hostnamectl set-hostname master
+    2  logout
+    3  $ sudo apt update; sudo apt install software-properties-common; sudo add-apt-repository --yes --update ppa:ansible/ansible; sudo apt install ansible
+    4  ssh-keygen
+    5  ssh-copy-id ubuntu@3.111.47.113
+    6  ssh -i ubuntu@43.204.220.128
+    7  ssh ubuntu@43.204.220.128
+    8  ssh-copy-id ubuntu@43.204.220.128
+    9  ssh ubuntu@43.204.220.128
+   10  ssh ubuntu@3.111.47.113
+   11  ansible --version
+   12  cd /etc/ansible
+   13  ls
+   14  sudo vim hosts
+   15  tail hosts
+   16  ansible web -m ping
+   17  ansible web -a "mkdir hello"
+   18  ansible web -a "ls"
+   19  ansible web -a "wc -l /etc/passwd"
+   20  ansible web --list
+   21  ansible-inventory --list
+   22  ansible web -m ping
+   23  history

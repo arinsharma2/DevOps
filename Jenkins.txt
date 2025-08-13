@@ -1,0 +1,19 @@
+Jenkins
+Githubaction
+GitLab
+ArgoCD
+
+high accuracy
+
+
+7e870471703942d7a30122c24ecac9ad - pwd
+
+docker build -t t1
+
+docker run -d -p 8080 t1
+
+sudo systemctl restart jenkins.service 
+
+docker run -d --name arproject 80:80 t1 
+
+* * * * * every min
