@@ -1,0 +1,11 @@
+- hosts: web
+  name: apache playbook
+  become: true   #for sudo access
+  tasks: 
+    - name: for apt update
+      apt: 
+        update_cache: yes
+    - name: install apache2
+      apt: 
+        name: apache2
+        state: present

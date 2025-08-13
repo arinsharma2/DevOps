@@ -1,0 +1,185 @@
+Application
+     |
+   Shell
+     |
+  Kernel
+     |
+ Hardware
+
+d/blue - folder
+-/black - file
+
+to create folder - mkdir name_folder(command)
+slash / - root directory
+command(space) argument
+command --help (manual)
+pwd
+cd 
+bin folder have all command stored.
+sbin folder (admin power) root user but not user.
+dev external devices (pendrive)
+home folder 
+proc folder - store all tabs  (access computer)
+touch - create a file
+rmdir- delete folder (empty)
+rm -r name_folder- deletes folder  or rm -r * (delete all folder)
+mkdir -p folder_name/folder_name/
+tree folder_name
+rm <file_name>
+Single line command for folder inside the folder-
+mkdir -p B/{F,G} C/H/{I,J}
+copy file
+cp <source> <dest>
+
+            path
+         /        \
+absolute          relative
+/home/arin/A/B/F  B/F
+
+We are in N directory and copy the file from J directory to E directory then 
+1. if use absolute path to copy the file-
+    cp /home/arin/A/C/H/J/file_name /home/arin/A/E/
+2. if use relative path-
+    cp ../../../C/H/J/file_name  ../../../E/
+
+mv - move one file from one directory to another directory (we can change the name of file also.)
+
+history -d no_of_line (delete the history of that line)
+
+cat <file_name> command (use to display text of that file)
+
+cli - 	vi
+	vim 
+         /\
+  command  insertmode
+vim <filename>
+command i (press) -> insertmode
+esc (press) 
+:wq -> exit and save
+:q -> exit without save
+:q! -> forcefully exit	
+:w -> save
+Ctrl+Shift+C -> copy the text  or yy
+Ctrl+Shift+V -> paste the text  or p or np where n is no of times 
+dd -> delete
+:/(name) -> search the line which contain that word
+/(name) -> search that word
+
+export -> global variable define
+env -> see all the variables.
+
+cntrl + shift + t -> open new terminal 
+cntrl + alt + t -> open new tab
+
+set or export to create variable
+unset to remove variable
+
+; to end one command in single line.
+&&  
+
+giving space " " after command.
+
+alais
+
+head 
+tail
+grep
+
+yes hello >myfile then ctrl+c to stop it.
+
+tar -czf abc.tar myfile (to compress file) f -> forcefully
+ls -lh
+
+delete the file rm -r <file_name>
+tar -xf abc.tar ( to extract file)
+ls -lh
+
+     command
+        /\
+success    failed
+channel 1  channel 2
+
+command > file_name (by default 1) 
+command &> file_name (it will judge)
+
+INPUT OUTPUT REDIRECTION (>) 
+
+if we want to append then put ">>"
+
+stdin -> input
+stdout -> output
+stderr -> error
+
+pipe/pipeline -> to store temporary file.
+
+SHELL
+	line by line 
+	interpreter
+
+BASH -> Born Against SHELL
+
+USER
+
+1. Superuser -> root -> 0 (user_id)
+2. System user -> 1-999 (user_id)
+3. General user/local user -> 1000-_ 
+
+passwd -> contains 
+
+to switch user -> su - roots
+
+GROUP
+1. Primary group (group created when user is created).
+2. Supplymentry group
+
+adduser -> to add new user
+deluser -> to delete user
+usermod -> user modification
+groupadd -> to add new group
+groupdel -> to delete group
+
+comment -> #
+
+mv -> to move file and change the name.
+chmod +x file_name -> to execute
+
+positional argument 
+name_of_shell  is at 0 position.
+
+PERMISSION 
+file folder permission changed by only owner or root.
+ls -l 
+d -> dir
+- -> file
+drwxrwxr-x
+   		octal no.
+r -> read 	4
+w -> write	2
+x -> execute	1
+
+chmod u+w <filename> 
+chmod u-w <filename>
+
+change ownership -> chown user:group
+
+ls -ld A (to open directory A)
+
+001 -> 1 (__X)
+010 -> 2 (_W_)
+011 -> 3 (_wx)
+100 -> 4 (r__)
+101 -> 5 (r_x)
+110 -> 6 (rw_)
+111 -> 7 (rwx)
+
+777 -> directory
+666 -> file (not executable)
+umask -> 0002 (default permission)
+umask -> To change the permission of file when file is created.
+
+ACCESS CONTROL LIST [ACL] -> to user
+setfacl -> a command to set access control for user (can't use octal here)
+getfacl -> command to get file permission datails.
+
+copy file ->
+open file in cmd then type command -> scp command.txt arin@192.168.173.114:/home/arin

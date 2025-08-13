@@ -1,0 +1,46 @@
+http -> port no 80
+HyperText Transfer Protocol
+
+html -> Hypertext Markup Language
+
+Server -> Apache 2 web server
+
+Apache2 -> web server application
+
+systemctl enable apache2 
+	    |
+	AutoStart when instance started and by default
+systemctl reload apache2
+	    |
+	reload configuration
+(by default) PATH -> /var/www/html/ -> index.html(first file)
+configuration file -> /etc/apache2/
+(use sudo)
+
+Elastic IP -> it is use to make IP permanent.
+Domain Name System DNS -> port no - 53 (Name given to IP address) 
+	/\
+Local DNS Global DNS
+
+RDP -> Remote Desktop Protocol
+
+lsblk -> command to open all volume
+create a folder
+to format -> mkfs.ext4 /dev/xvdm
+
+	Scaling
+	  /\
+Vertical S Horizontal S
+
+Horizontal Scaling -> 
+
+Advantages ->
+
+AWS -> Elastic Load Balancer
+LOAD BALANCER 
+|-Application LB
+|-Network LB
+|-Gateway LB
+|-Classic LB
+
+step-1: Create a target group
